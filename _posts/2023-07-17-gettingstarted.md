@@ -55,7 +55,7 @@ Open the completed HTML document in a browser and you should see something like 
 <iframe src="{{ site.baseurl }}/l0.html" style="width: 650px; height: 500px"></iframe>
 
 ## Task 1
-Change the initial view of the map to display your hometown or country. Coordinates are in [latitude, longitude] order
+Change the initial view of the map to display your hometown or country. Coordinates are in [latitude, longitude] order.
 
 ## Task 2
 Try other tiled map services.

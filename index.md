@@ -21,7 +21,7 @@
 [Leaflet documentation](https://leafletjs.com/)
 
 ## Course materials
-{% for post in site.posts %}
+{% for post in site.posts reversed %}
  - [{{ post.title }}]({{ site.baseurl }}{{ post.url }})
 {% endfor %}
 
