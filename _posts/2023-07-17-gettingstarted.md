@@ -1,8 +1,8 @@
 ---
-title: "01 – Getting started"
+title: "01 â€“ Getting started"
 ---
 
-# 01 – Getting started
+# 01 â€“ Getting started
 
 A Leaflet map is an interactive map viewer widget in your HTML page. Let's start with a simple HTML document:
 
