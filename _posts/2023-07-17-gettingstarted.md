@@ -52,7 +52,7 @@ Finally, we need to add a few lines of JavaScript code that creates the map inte
 ```
 
 Open the completed HTML document in a browser and you should see something like this:
-<iframe src="{{ site.baseurl }}l0.html" style="width: 100%; min-height: 400px"></iframe>
+<iframe src="{{ site.baseurl }}/l0.html" style="width: 650px; height: 500px"></iframe>
 
 ## Task 1
 Change the initial view of the map to display your hometown or country. Coordinates are in [latitude, longitude] order
