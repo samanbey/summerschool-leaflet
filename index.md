@@ -12,13 +12,13 @@
 - adding a route planner
 
 ## Suggested background materials
-https://www.w3schools.com/html/
+[HTML basics](https://www.w3schools.com/html/)
 
-https://www.w3schools.com/css/
+[CSS basics](https://www.w3schools.com/css/)
 
-https://www.w3schools.com/js/
+[JavaScript basics](https://www.w3schools.com/js/)
 
-https://leafletjs.com/
+[Leaflet documentation](https://leafletjs.com/)
 
 ## Course materials
 {% for post in site.posts %}
