@@ -52,7 +52,7 @@ Finally, we need to add a few lines of JavaScript code that creates the map inte
 ```
 
 Open the completed HTML document in a browser and you should see something like this:
-(https://samanbey.github.io/summerschool-leaflet/l0.html)
+<iframe src="{{ site.baseurl }}l0.html" style="width: 100%; min-height: 400px"></iframe>
 
 ## Task 1
 Change the initial view of the map to display your hometown or country. Coordinates are in [latitude, longitude] order
@@ -60,8 +60,8 @@ Change the initial view of the map to display your hometown or country. Coordina
 ## Task 2
 Try other tiled map services.
 OpenTopoMap:
-- url template: 'https://tile.openstopomap.org/{z}/{x}/{y}.png'
+- url template: ```'https://tile.openstopomap.org/{z}/{x}/{y}.png'```
 - attribution: ```'Data: &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, rendering: : &copy; <a href="http://www.opentopomap.org">OpenTopoMap</a>'```
 
-Explore the maps of Stamen: http://maps.stamen.com
+Explore the maps of Stamen: [http://maps.stamen.com](http://maps.stamen.com)
 
