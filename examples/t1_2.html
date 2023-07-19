@@ -17,7 +17,7 @@
             // create map viewer object
             var map = L.map('map').setView([46.30578, 17.78351], 14);
             
-            // add a tiled map layer with OpenStreetMap tiles
+            // add a tiled map layer with OpenTopoMap tiles
             L.tileLayer('https://tile.opentopomap.org/{z}/{x}/{y}.png', {
                 attribution: 'Data: &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, rendering: : &copy; <a href="http://www.opentopomap.org">OpenTopoMap</a>'
             }).addTo(map);
