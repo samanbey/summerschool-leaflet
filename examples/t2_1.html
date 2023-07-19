@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />        
+        <title>Best fishes</title>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+        <style>
+            #map { width: 600px; height: 400px; }
+        </style>
+    </head>
+    <body>
+        <h1>Best fishes</h1>
+        <p>Come and buy fish freshly from my boat. You can find me here:</p>
+        <div id="map"></div>
+        <script>
+            // create map viewer object
+            var map = L.map('map').setView([46.88682, 17.90299], 13);
+            
+            // add a tiled map layer with OpenStreetMap tiles
+            L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+            }).addTo(map);
+            
+            // add a marker
+            var m = L.marker([46.88682, 17.90299]).addTo(map);
+            
+            // bind tooltip
+            m.bindTooltip('My fishing boat');
+            
+            // bind popup
+            m.bindPopup('<h3>Best fishes</h3>Open: daily 7:00-15:00<br/><img src="../images/fish_boat.jpg" width="100%" />').openPopup();
+        </script>
+    </body>
+</html>
