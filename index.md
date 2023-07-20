@@ -34,7 +34,7 @@
 
 ## Examples for tasks
 {% for f in site.static_files %}
-{% if f.path contains 'examples/t' %} - [f.name]({{ site.baseurl }}{{ f.path }})
+{% if f.path contains 'examples/t' %} - [{{ f.name }}]({{ site.baseurl }}{{ f.path }})
 {% endif %}
 {% endfor %}
 
