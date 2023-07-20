@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />        
+        <title>Geocoding</title>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+        <style>
+            #map { width: 600px; height: 400px; }
+            .leaflet-tooltip {
+                width: 300px;
+                white-space: normal;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Geocoding</h1>
+        Enter address or place name:
+        <input type="text" id="place" />
+        <input type="button" value="Search" onclick="geocode()" />
+        <div id="map"></div>
+        <script>
+            // create map viewer object
+            var map = L.map('map').setView([47.475, 19.061], 7);
+            
+            var gj; // global ariable for geojson layer
+            
+            // add a tiled map layer with OpenStreetMap tiles
+            L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+            }).addTo(map);
+            
+            // geocoder function called when the 'Search' button is clicked
+            function geocode() {
+                // find the input field 'place' and get its content
+                let placename = document.querySelector('#place').value;
+                let url = 'https://nominatim.openstreetmap.org/search?format=geojson&q='+placename;
+                // fetch sample GeoJSON data
+                fetch(url)
+                    .then(r => r.json()) 
+                        // after the response arrived, extract data as a json object
+                        .then(d => { 
+                            // when data extraction is ready, create a geojson layer from it
+                            gj = L.geoJSON(d)
+                                .addTo(map)
+                                .bindTooltip(tt);
+                            map.fitBounds(gj.getBounds());
+                        });
+            }           
+                    
+            // tooltip function for sample data - retrieves the value of the 'display_name' property
+            function tt(layer) {
+                return layer.feature.properties.display_name;
+            }
+        </script>
+    </body>
+</html>
