@@ -22,12 +22,12 @@
 
 ## Software requirements
 - A code editor is required for creating HTML/JavaScript codes. Suggestions:
-    -[Notepad++](https://notepad-plus-plus.org/)
-    -[Visual Studio Code](https://code.visualstudio.com/)
+    - [Notepad++](https://notepad-plus-plus.org/)
+    - [Visual Studio Code](https://code.visualstudio.com/)
 - A web browser for displaying the web maps created.
 - A public web storage where you can host your web map. (This is not required for the first few examples but becomes important when fetching data files (e.g. GeoJSON data). Alternatively you can also set up a webserver to localhost.
 
-## Course materials
+## Lessons
 {% for post in site.posts reversed %}
  - [{{ post.title }}]({{ site.baseurl }}{{ post.url }})
 {% endfor %}
