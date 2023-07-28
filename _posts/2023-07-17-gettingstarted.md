@@ -63,7 +63,7 @@ Change the initial view of the map to display your hometown or country. Coordina
 Try other tiled map services.
 
 OpenTopoMap:
-- url template: ```'https://tile.openstopomap.org/{z}/{x}/{y}.png'```
+- url template: ```'https://tile.opentopomap.org/{z}/{x}/{y}.png'```
 - attribution: ```'Data: &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, rendering: : &copy; <a href="http://www.opentopomap.org">OpenTopoMap</a>'```
 
 Explore the maps of Stamen: [http://maps.stamen.com](http://maps.stamen.com)

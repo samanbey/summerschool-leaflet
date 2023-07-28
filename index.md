@@ -7,9 +7,8 @@
 - displaying markers and vector features
 - adding mouse event handlers
 - loading geojson data
-- styling vectors
 - adding a geocoder
-- adding a route planner
+- styling vectors
 
 ## Suggested background materials
 [HTML basics](https://www.w3schools.com/html/)
