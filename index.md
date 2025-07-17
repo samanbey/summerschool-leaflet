@@ -1,5 +1,5 @@
-<img alt="BSU logo" src="{{ site.baseurl }}/images/bsu_logo.png" style="float:left; height:200px" />
-<img alt="BSU_GEO logo" src="{{ site.baseurl }}/images/bsu2023geoinf-thumb.png" style="float:right; height:200px" />
+<img alt="BSU logo" src="{{ site.baseurl }}/images/bsu_logo.png" style="height:200px" />
+<img alt="BSU_GEO logo" src="{{ site.baseurl }}/images/bsu2023geoinf-thumb.png" style="height:200px" />
 # Developing open source interactive web maps using Leaflet
 
 ## Outcomes
