@@ -2,13 +2,13 @@
 
 ## Outcomes
 - HTML and JavaScript basics needed for developing Leaflet-based web maps
-- embedding a Leaflet map viewer into HTML pages
-- adding tile map layers
-- displaying markers and vector features
-- adding mouse event handlers
-- loading geojson data
-- adding a geocoder
-- styling vectors
+- Embedding a Leaflet map viewer into HTML pages
+- Adding tile map layers
+- Displaying markers and vector features
+- Adding mouse event handlers
+- Loading geojson data
+- Adding a geocoder
+- Styling vectors
 
 ## Suggested background materials
 [HTML basics](https://www.w3schools.com/html/)

@@ -26,7 +26,7 @@ Now we'll need to include the CSS and JavaScript codes of Leaflet. You can eithe
         <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 ```
 
-The next thing needed is a DIV element which wll contain the map viewer. It can be anywhere in the BODY section of your HTML. Give it an ID to help identifying it:
+The next thing needed is a DIV element which will contain the map viewer. It can be anywhere in the BODY section of your HTML. Give it an ID to help identifying it:
 ``` html
         <div id="map"></div>
 ```
@@ -66,5 +66,5 @@ OpenTopoMap:
 - url template: ```'https://tile.opentopomap.org/{z}/{x}/{y}.png'```
 - attribution: ```'Data: &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, rendering: : &copy; <a href="http://www.opentopomap.org">OpenTopoMap</a>'```
 
-Explore the maps of Stamen: [http://maps.stamen.com](http://maps.stamen.com)
+Explore the maps of Stadia: [https://docs.stadiamaps.com/themes/](https://docs.stadiamaps.com/themes/)
 
