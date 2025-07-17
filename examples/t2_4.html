@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />        
+        <title>Lesson 2 task 4</title>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+        <style>
+            #map { width: 600px; height: 400px; }
+        </style>
+    </head>
+    <body>
+        <h1>Adding markers on mouse click</h1>
+        <div id="map"></div>
+        <script>
+            // create map viewer object
+            var map = L.map('map').setView([46.30578, 17.78351], 14);
+            
+            // add a tiled map layer with OpenStreetMap tiles
+            L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+            }).addTo(map);
+            
+            var count = 0; // counter of markers
+            
+            // mouse click event handler - adding a new marker a the clicked position
+            map.on('click', function(event) {
+                count += 1;
+                L.marker(event.latlng).addTo(map).bindPopup('Point '+count).openPopup();
+            });
+        </script>
+    </body>
+</html>
